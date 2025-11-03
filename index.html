@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brasforte | Gente em Foco</title>
+  <link href="https://fonts.googleapis.com/css2?family=Khand:wght@500;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* ---------- CORES E FONTES ---------- */
+    :root {
+      --cor-fundo: #ffffff;
+      --cor-card: #263868;
+      --cor-texto: #ffffff;
+      --cor-hover: #0096D1;
+      --cor-secundaria: #263868;
+      --raio-borda: 14px;
+      --fonte-rodape: 'Barlow', sans-serif;
+    }
+
+    /* ---------- BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      transition: all 0.3s ease-in-out;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      font-family: 'Barlow', sans-serif;
+      color: var(--cor-secundaria);
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: #ffffff;
+    }
+    main {
+      flex: 1;
+    }
+
+    /* ---------- HEADER ---------- */
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+    header h1 {
+      font-family: 'Khand', sans-serif;
+      color: var(--cor-secundaria);
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      max-width: 800px;
+      margin: 0 auto;
+      color: var(--cor-secundaria);
+      font-size: 1.1rem;
+    }
+
+    /* ---------- SEÇÃO DE CARDS ---------- */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 40px 20px 60px;
+    }
+    .card {
+      background: var(--cor-card);
+      border-radius: var(--raio-borda);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      width: 270px;
+      padding: 25px;
+      text-align: center;
+      cursor: pointer;
+      color: var(--cor-texto);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+      background: var(--cor-hover);
+    }
+    .card i {
+      font-size: 2.3rem;
+      color: var(--cor-texto);
+      margin-bottom: 12px;
+    }
+    .card h3 {
+      font-family: 'Khand', sans-serif;
+      font-size: 1.4rem;
+      color: var(--cor-texto);
+      margin-bottom: 10px;
+    }
+    .card p {
+      color: var(--cor-texto);
+      font-size: 0.95rem;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-family: var(--fonte-rodape);
+      font-size: 0.9rem;
+      color: #000000;
+      background: transparent;
+      margin-top: auto;
+    }
+
+    /* ---------- RESPONSIVO ---------- */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<main>
+  <header>
+    <h1>MUNDO NOVO | BRASFORT</h1>
+    <p>Explore as etapas da jornada de adaptação e descubra o que impulsiona o crescimento individual e coletivo.</p>
+  </header>
+
+  <section class="cards">
+    <!-- CARD 1: A Curva da Mudança -->
+    <a href="https://acessopublico.github.io/a-curva-da-mudanca/" class="card" aria-label="A Curva da Mudança">
+      <i class="fa-solid fa-chart-line"></i>
+      <h3>A Curva da Mudança</h3>
+      <p>Entenda as fases emocionais e comportamentais pelas quais passamos durante processos de mudança.</p>
+    </a>
+
+    <!-- CARD 2: Mapa dos Estágios -->
+    <a href="https://acessopublico.github.io/mapa/" class="card" aria-label="Mapa dos Estágios">
+      <i class="fa-solid fa-map"></i>
+      <h3>Mapa dos Estágios</h3>
+      <p>Visualize de forma clara as etapas do processo e identifique em qual momento você se encontra.</p>
+    </a>
+
+    <!-- CARD 3: Mini-autoavaliação (sem link) -->
+    <div class="card" role="article" aria-label="Mini-autoavaliação">
+      <i class="fa-solid fa-list-check"></i>
+      <h3>Mini-autoavaliação</h3>
+      <p>Reflita sobre sua adaptação e identifique oportunidades de desenvolvimento pessoal.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 BRASFORT | Mundo Novo.</p>
+</footer>
+
+</body>
+</html>
+</html>
